@@ -1,0 +1,126 @@
+{
+  "calibracion": {
+    "lambda_G1": 0.0025450126903453735,
+    "lambda_G2": 0.0027475339369430873,
+    "total_model_mean": 0.29978175207089236,
+    "total_model_sd": 0.0004064471442925351,
+    "share_G1_model_mean": 0.49050430890048585,
+    "share_G1_model_sd": 0.0008255074427374691,
+    "share_G1_dnp": 0.49009900990099003,
+    "share_G2_model_mean": 0.5094956910995141,
+    "share_G2_dnp": 0.5099009900990099,
+    "error_pp_G1": 0.04052989994958178,
+    "error_pp_G2": -0.04052989994958178,
+    "max_abs_error_pp_across_reps": 0.2470143796074964,
+    "central_loss_pct_of_inflow": 3.7104316867226683,
+    "stage_loss_base_pct_of_initial": {
+      "Poscosecha": 4.757317110388155,
+      "Almacenamiento": 9.947112499355693,
+      "Transporte": 3.8301140749995946,
+      "Central de abastos": 3.0227201048544927,
+      "Comercio minorista": 8.420911417491302
+    }
+  },
+  "supuestos": {
+    "mean_residence_time_hours": [
+      10.0,
+      36.0,
+      10.0,
+      20.0,
+      48.0
+    ],
+    "residence_time_log_sigma": 0.5,
+    "mean_temperature_celsius": [
+      28.0,
+      22.0,
+      26.0,
+      15.0,
+      18.0
+    ],
+    "temperature_sd_celsius": [
+      3.0,
+      4.0,
+      4.0,
+      3.0,
+      3.0
+    ],
+    "Q10": 2.2,
+    "TOTAL_LOSS_TARGET": 0.3,
+    "GROUP1_SHARE_TARGET": 0.49009900990099003,
+    "reefer_temperature_celsius": 8.0,
+    "reefer_temperature_sd_celsius": 1.5,
+    "central_time_factor": 0.7,
+    "detection_probability": 0.8,
+    "response_factor": 0.5,
+    "storage_alert_threshold_celsius": 28.0,
+    "transport_alert_threshold_celsius": 30.0,
+    "false_alarm_rate": 0.1,
+    "respond_to_false": false,
+    "random_marking_rate": 0.172,
+    "fruit_veg_share": 0.62,
+    "national_total_loss_Mt": 9.76,
+    "bogota_share": 0.3809
+  },
+  "n_lotes": 40000,
+  "n_replicas": 30,
+  "nacional_en_alcance_Mt": 2.4446848,
+  "reduccion_S4_base_sens": 11.966576104332184,
+  "sensibilidad_conjunta": {
+    "S1": {
+      "p5": 4.9252886622374135,
+      "mediana": 7.999932801192626,
+      "p95": 12.911319535790033
+    },
+    "S2": {
+      "p5": 1.0347082525832603,
+      "mediana": 2.5900529814665614,
+      "p95": 4.7758046744306535
+    },
+    "S3": {
+      "p5": 0.8783910730168484,
+      "mediana": 2.642340960613325,
+      "p95": 6.145457534580526
+    },
+    "S4": {
+      "p5": 8.046941965536845,
+      "mediana": 11.827215827947818,
+      "p95": 16.568587268430704
+    },
+    "fraccion_S1_mayor": 0.9825
+  },
+  "contrafactual_priorizar_falsas": {
+    "S1": 8.365946175980312,
+    "S2": 2.651308867423672,
+    "S3": 4.4531185492329115,
+    "S4": 13.631377624319116
+  },
+  "contrafactual_marcado_al_azar": {
+    "S3r": 3.1493144472814696
+  },
+  "casos_extremos": {
+    "transporte x0,4 (4 h)": {
+      "S1": 3.884107243027362,
+      "S2": 3.0840410767662725,
+      "S3": 3.5260747328959017,
+      "S4": 7.998939506321157
+    },
+    "transporte a 18 C": {
+      "S1": 3.6493569027329276,
+      "S2": 2.9764696933991734,
+      "S3": 1.0163485731084605,
+      "S4": 7.615765798390864
+    },
+    "transporte x0,4 y a 18 C": {
+      "S1": 1.5962068555608424,
+      "S2": 3.2510902359242246,
+      "S3": 1.11285327831959,
+      "S4": 5.893802470078088
+    },
+    "refrigerado a 12 C": {
+      "S1": 7.40688424873224,
+      "S2": 2.651308867423672,
+      "S3": 2.993702799125424,
+      "S4": 10.993251538298194
+    }
+  }
+}
